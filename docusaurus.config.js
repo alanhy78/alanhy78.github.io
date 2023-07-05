@@ -59,6 +59,7 @@ const config = {
           //   type: 'search',			// 搜索框 现在还没做好...
           //   position: 'right', 	// 搜索框位置 在右边
           // },
+
           {
             type: 'doc',				// 把这个项目的类型设置为文档链接。
             docId: 'index',			// 这个项目链接到的文档的 ID。
