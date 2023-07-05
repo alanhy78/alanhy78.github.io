@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[936],{4660:e=>{e.exports=JSON.parse('{"title":"Linux","slug":"/category/linux","permalink":"/category/linux","navigation":{"previous":{"title":"\u6280\u672f\u535a\u5ba2 1 \u6211\u7684\u672a\u6765\u4e0d\u662f\u68a6","permalink":"/"},"next":{"title":"Lbase111","permalink":"/Linux/part1"}}}')}}]);
