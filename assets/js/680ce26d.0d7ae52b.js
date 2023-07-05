@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[688],{5408:e=>{e.exports=JSON.parse('{"title":"C/C++","slug":"/category/cc","permalink":"/category/cc","navigation":{"previous":{"title":"Lbase111","permalink":"/Linux/part2"},"next":{"title":"Cbase111","permalink":"/C++/part1"}}}')}}]);
