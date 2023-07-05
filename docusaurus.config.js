@@ -13,7 +13,6 @@ const config = {
   baseUrl: '/',
   organizationName: 'alanhy78', // Usually your GitHub org/user name.
   projectName: 'alanhy78.github.io', // Usually your repo name.
-
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
@@ -32,7 +31,6 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          routeBasePath: '/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

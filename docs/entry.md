@@ -1,7 +1,7 @@
 ---
 description: 简介
 id: entry
-slug: /
+#slug: /
 ---
 
 # 技术博客
