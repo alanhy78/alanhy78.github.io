@@ -65,11 +65,11 @@ const config = {
             position: 'right',	// 显示位置 在右边
             label: '正文',			// 项目显示的名称
           },
-          {
-            href: 'https://github.com/alanhy78',	// 点击图标时跳转到的链接
-            label: 'GitHub',		// 项目显示的名称
-            position: 'right',	// 显示位置 在右边
-          },
+          // {
+          //   href: 'https://github.com/alanhy78',	// 点击图标时跳转到的链接
+          //   label: 'GitHub',		// 项目显示的名称
+          //   position: 'right',	// 显示位置 在右边
+          // },
         ],
 
       },
