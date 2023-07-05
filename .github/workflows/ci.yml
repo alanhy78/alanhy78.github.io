@@ -1,6 +1,6 @@
-name: Deploy Github pages
-on: # 触发条件
-  push: # 每当 push 到 main 分支时触发部署
+name: GitHub Actions Build and Deploy
+on:
+  push:
     branches:
       - master
 jobs:
@@ -13,7 +13,7 @@ jobs:
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@master
       env:
-        ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: gh-pages
         FOLDER: build
         BUILD_SCRIPT: npm install && npm run build
