@@ -1,6 +1,6 @@
 name: Deploy Github pages
-on:
-  push:
+on: # 触发条件
+  push: # 每当 push 到 main 分支时触发部署
     branches:
       - master
 jobs:
@@ -10,7 +10,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
       with:
-          persist-credentials: false
+        persist-credentials: false
+    - name: Setup Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: "18"
     - name: Install and Build
       run: |
         yarn install
@@ -19,5 +23,6 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GH_PAGE_ACTION_TOKEN }}
-        publish_dir: ./build
+        target_branch: gh-pages
+        publish_dir: build
    
