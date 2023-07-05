@@ -51,28 +51,28 @@ const config = {
         minHeadingLevel: 2,
         maxHeadingLevel: 3,
       },
-      // navbar: {
-      //   title: 'Kuriyama的博客', // 标题
-      //   hideOnScroll: false,		// 下拉界面时不隐藏导航栏
-      //   items: [
-      //     {
-      //       type: 'search',			// 搜索框 现在还没做好...
-      //       position: 'right', 	// 搜索框位置 在右边
-      //     },
-      //     {
-      //       type: 'doc',				// 把这个项目的类型设置为文档链接。
-      //       docId: 'HTML',			// 这个项目链接到的文档的 ID。
-      //       position: 'right',	// 显示位置 在右边
-      //       label: '正文',			// 项目显示的名称
-      //     },
-      //     {
-      //       href: 'https://github.com/Dcose',	// 点击图标时跳转到的链接
-      //       label: 'GitHub',		// 项目显示的名称
-      //       position: 'right',	// 显示位置 在右边
-      //     },
-      //   ],
+      navbar: {
+        title: 'MyBlog', // 标题
+        hideOnScroll: false,		// 下拉界面时不隐藏导航栏
+        items: [
+          // {
+          //   type: 'search',			// 搜索框 现在还没做好...
+          //   position: 'right', 	// 搜索框位置 在右边
+          // },
+          {
+            type: 'doc',				// 把这个项目的类型设置为文档链接。
+            docId: 'index',			// 这个项目链接到的文档的 ID。
+            position: 'right',	// 显示位置 在右边
+            label: '正文',			// 项目显示的名称
+          },
+          {
+            href: 'https://github.com/alanhy78',	// 点击图标时跳转到的链接
+            label: 'GitHub',		// 项目显示的名称
+            position: 'right',	// 显示位置 在右边
+          },
+        ],
 
-      // },
+      },
       // footer: {
       //   style: 'dark',
       //   links: [

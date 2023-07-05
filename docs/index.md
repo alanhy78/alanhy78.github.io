@@ -1,6 +1,6 @@
 ---
 description: 简介
-id: entry
+id: index
 #slug: /
 ---
 

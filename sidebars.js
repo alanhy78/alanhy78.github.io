@@ -13,10 +13,10 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-  docs: [
+  tutorialSidebar: [
     {
       type: 'doc',
-      id: 'entry',
+      id: 'index',
       label: '简介',
     },
     {
