@@ -1,28 +1,22 @@
-name: Deploy Github pages
-on: # 触发条件
-  push: # 每当 push 到 main 分支时触发部署
+name: Build and Deploy
+on:
+  push:
     branches:
       - master
+permissions:
+  contents: write
 jobs:
   build-and-deploy:
+    concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v3
-      with:
-        persist-credentials: false
-    - name: Setup Node.js
-      uses: actions/setup-node@v1
-      with:
-        node-version: "18"
-    - name: Install and Build
-      run: |
-        yarn install
-        yarn run build
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{secrets.GITHUB_TOKEN}}
-        target_branch: gh-pages
-        build_dir: build
-   
+      - name: Checkout # 获取源码
+        uses: actions/checkout@v3
+
+      - name: Build and Deploy # 构建和部署
+        uses: JamesIves/github-pages-deploy-action@v4
+        env:
+          ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: build
+          BUILD_SCRIPT: npm install && npm run build
