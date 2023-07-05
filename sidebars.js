@@ -13,7 +13,66 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
- 
+  docs: [
+    {
+      type: 'doc',
+      id: 'entry',
+      label: '简介',
+    },
+    {
+      type: 'category',
+      label: 'Linux',
+      link: {
+        type: 'generated-index',
+      },
+      items: [
+        {
+          type: 'doc',
+          id: 'Linux/part1',
+          label: '基本情况',
+        },
+        {
+          type: 'doc',
+          id: 'Linux/part2',
+          label: '命令使用',
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'C/C++',
+      link: {
+        type: 'generated-index',
+      },
+      items: [
+        {
+          type: 'doc',
+          id: 'C++/part1',
+          label: 'part1',
+        },
+        {
+          type: 'doc',
+          id: 'C++/part2',
+          label: 'part2',
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Flutter',
+      link: {
+        type: 'generated-index',
+      },
+      items: [
+        {
+          type: 'doc',
+          id: 'Flutter/fbase',
+          label: 'fbase',
+        },
+      ],
+    },
+
+  ],
 };
 
 module.exports = sidebars;
