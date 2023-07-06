@@ -12,7 +12,11 @@ const config = {
   url: 'https://alanhy78.github.io',
   baseUrl: '/',
   organizationName: 'alanhy78', // Usually your GitHub org/user name.
-  projectName: 'alanhy78.github.io', // Usually your repo name.
+  projectName: 'alanhy78.github.io',
+  themes: ['@docusaurus/theme-mermaid'],
+  markdown: {
+    mermaid: true,
+  },// Usually your repo name.
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 

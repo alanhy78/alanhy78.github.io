@@ -16,15 +16,17 @@ const sidebars = {
   tutorialSidebar: [
     {
       type: 'doc',
+      id: 'demo',
+      label: 'demo',
+    },
+    {
+      type: 'doc',
       id: 'index',
       label: '简介',
     },
     {
       type: 'category',
       label: 'Linux',
-      link: {
-        type: 'generated-index',
-      },
       items: [
         {
           type: 'doc',
@@ -41,9 +43,6 @@ const sidebars = {
     {
       type: 'category',
       label: 'C/C++',
-      link: {
-        type: 'generated-index',
-      },
       items: [
         {
           type: 'doc',
@@ -60,9 +59,6 @@ const sidebars = {
     {
       type: 'category',
       label: 'Flutter',
-      link: {
-        type: 'generated-index',
-      },
       items: [
         {
           type: 'doc',
@@ -71,7 +67,22 @@ const sidebars = {
         },
       ],
     },
-
+    {
+      type: 'category',
+      label: 'Docker',
+      items: [
+        {
+          type: 'doc',
+          id: 'Docker/part1',
+          label: '基本使用',
+        },
+        {
+          type: 'doc',
+          id: 'Docker/part2',
+          label: '基本使用2',
+        },
+      ],
+    },
   ],
 };
 
