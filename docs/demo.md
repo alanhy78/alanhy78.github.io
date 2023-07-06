@@ -44,9 +44,9 @@ graph TD;
 
 The API documentation of each official plugin lists the supported attributes:
 
-- [Docs front matter](../../api/plugins/plugin-content-docs.mdx#markdown-front-matter)
-- [Blog front matter](../../api/plugins/plugin-content-blog.mdx#markdown-front-matter)
-- [Pages front matter](../../api/plugins/plugin-content-pages.mdx#markdown-front-matter)
+- [Docs front matter]
+- [Blog front matter]
+- [Pages front matter]
 
 :::
 
@@ -66,7 +66,7 @@ Each locale is a **distinct standalone single-page application**: it is not poss
 
 Docusaurus provides **default translations** for generic theme labels, such as "Next" and "Previous" for the pagination.
 
-Please help us complete those **[default translations](https://github.com/facebook/docusaurus/tree/main/packages/docusaurus-theme-translations/locales)**.
+Please help us complete those **[default translations]**.
 
 :::
 
